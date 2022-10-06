@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+<html>     
+  <head>
+    <title>shutters</title>
+    <link rel="stylesheet" href="../../static/css/call.css">
+  </head>
+<body>
+  <div class="flex-container">
+    <header class="header">Room #7</header>
+
+    <div class="row">
+    <div class="column" style="background-color:rgb(251, 255, 0); color:rgb(0, 0, 0);">
+          <a href={{url_for('toggle_curtains')}}> Toggle the shutter/blinds
+              <img src="../../static/css/resources/window.webp" atl="window" class="square">
+          </a>
+    </div>
+    <div class="column" style="background-color:rgb(153, 153, 153);">
+          <a href={{url_for('home')}}> cancel</a>
+    </div>
+    </div>
+    <footer class="footer">Made by Morgan King, Keshav Raviprakash, Eric Chow, and Ahmed Legesse</footer>
+  </div>
+</body>
+</html>

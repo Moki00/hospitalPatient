@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>     
+<head>
+	<title>Room Comfort</title>
+	<link rel="stylesheet" href= "../static/css/room.css">
+</head>
+<body>
+<div class="flex-container">
+  <header class="header">Room #7</header>
+  <div class="row">
+    <!-- ac heater -->
+	<div class="column" style="background-color:rgb(251, 255, 0); color:rgb(0, 0, 0);">
+    <a href={{url_for('ac')}}>
+            <img src="../static/css/resources/fan.webp" atl="ac fan heater" class="square">
+        </a>
+	</div>
+  <!-- temperature -->
+	<div class="column" style="background-color:rgb(153, 153, 153);">
+        <a href={{url_for('temperature')}}>
+            <img src="../static/css/resources/temp.png" atl="temperature" class="square" >
+        </a>
+	</div>
+  <!-- bed controls -->
+  <div class="column" style="background-color:rgb(255, 58, 239);">
+    <a href={{url_for('bed')}}>
+        <img src="../static/css/resources/bed.webp" atl="bed control" class="square" >
+    </a>
+</div>
+	</div>
+  <div class="row">
+    <!-- blinds open or close -->
+	<div class="column" style="background-color:rgb(80, 201, 0);">
+        <a href={{url_for('shutter')}}>
+            <img src="../static/css/resources/window.webp" atl="blinds or shutters" class="square" >
+        </a>
+		
+	</div>
+  <!-- lights on or off -->
+	<div class="column" style="background-color:rgb(255, 0, 0);">
+    <a href={{url_for('lights')}}>
+        <img src="../static/css/resources/lightbulb.png" atl="ligts on or off" class="square" >
+    </a>
+	</div>
+  </div>
+  <footer class="footer">Made by Morgan King, Keshav Raviprakash, Eric Chow, and Ahmed Legesse</footer>
+</div>
+</body>
+</html>
+

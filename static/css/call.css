@@ -1,0 +1,99 @@
+/* all */
+* {
+  box-sizing: border-box;
+  background: rgb(51, 209, 255);
+  font-weight: bold;
+  font-size: xx-large;
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+  font-size:150%;
+}
+a:link {
+  text-decoration: none; /* removes underline */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Container for flexboxes */
+.row {
+  display: -webkit-flex;
+  display: flex;
+  max-height: 400px;
+  min-width: 100px;
+}
+
+/* Creates equal columns that sits next to each other */
+.column {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+  height: 50;
+  text-align: center;
+  width: 50%; 
+  max-width: 80%;
+  border: 1px solid black;  /* lines around the main 4 squares*/
+}
+
+/* each of the 4 squares */
+.square{
+  position: center;
+  width: auto;
+  height: 80%;
+  /* max-height: 50%; */
+  background: url(room.webp);
+}
+
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+/* Style the header */
+.header {
+  background-color: #0400fc;
+  padding: 30px;
+  text-align: center;
+  /* font-size: 35px; */
+}
+
+/* Style the footer */
+.footer {
+  background-color: #1100ff;
+  padding: 10px;
+  text-align: left;
+  font-size: 25px;
+}
+
+/* emergency 1 */
+.emergency{
+position: absolute;
+width: 306px;
+height: 337px;
+left: 550px;
+top: 843px;
+
+background: url(emergency.png);
+}
+
+/* nurse 1 */
+.call{
+position: absolute;
+width: 374px;
+height: 379px;
+left: 475px;
+top: 234px;
+
+background: url(nurse.png);
+}
